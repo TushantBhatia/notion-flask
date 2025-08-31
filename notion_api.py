@@ -5,8 +5,8 @@ import os
 app = Flask(__name__)
 
 # Get token and DB ID from environment variables
-NOTION_TOKEN = os.environ.get("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")
-DATABASE_ID = os.environ.get("2603cb131a8b80a5b807d3fe1fcff973")
+NOTION_TOKEN = os.environ.get("NOTION_TOKEN")
+DATABASE_ID = os.environ.get("DATABASE_ID")
 
 headers = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
